@@ -101,7 +101,6 @@ JUCE_END_IGNORE_WARNINGS_GCC_LIKE
           withCompletionHandler: (void(^)())completionHandler;
 - (BOOL) application: (UIApplication *) app openURL: (NSURL *) url options: (NSDictionary<UIApplicationOpenURLOptionsKey, id > *) options;
 #endif
-#endif
 
 @end
 
