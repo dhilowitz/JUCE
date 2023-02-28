@@ -76,10 +76,10 @@ public:
     /** Destructor. */
     ~ListenerList()
     {
-        WrappedIterator::forEach (activeIterators, [&] (auto& iter)
-        {
-            iter.invalidate();
-        });
+        // WrappedIterator::forEach (activeIterators, [&] (auto& iter)
+        // {
+        //     iter.invalidate();
+        // });
     }
 
     //==============================================================================
@@ -107,11 +107,11 @@ public:
 
         const auto index = listeners.removeFirstMatchingValue (listenerToRemove);
 
-        WrappedIterator::forEach (activeIterators, [&] (auto& iter)
-        {
-            if (0 <= index && index < iter.get().index)
-                --iter.get().index;
-        });
+        // WrappedIterator::forEach (activeIterators, [&] (auto& iter)
+        // {
+        //     if (0 <= index && index < iter.get().index)
+        //         --iter.get().index;
+        // });
     }
 
     /** Returns the number of registered listeners. */
