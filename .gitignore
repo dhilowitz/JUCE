@@ -65,5 +65,6 @@ extras/Projucer/JUCECompileEngine.dylib
 /build
 
 CMakeUserPresets.json
-DemoRunner.app
+.editorconfig
+
 Projucer.app
